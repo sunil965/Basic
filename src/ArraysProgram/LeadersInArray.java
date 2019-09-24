@@ -39,7 +39,7 @@ package ArraysProgram;
 class LeadersInArray 
 {
 //	 Java Function to print leaders in an array 
-	void printLeaders(int arr[], int size)
+	void printLeaders(int[] arr, int size)
 	{
 		int max_from_right = arr[size-1];
 
@@ -59,7 +59,7 @@ class LeadersInArray
 	public static void main(String[] args) 
 	{
 		LeadersInArray lead = new LeadersInArray();
-		int arr[] = new int[]{16, 17, 4, 3, 5, 2};
+		int[] arr = new int[]{16, 17, 4, 3, 5, 2};
 		int n = arr.length;
 		lead.printLeaders(arr, n);
 	}

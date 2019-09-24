@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class Triplet_Given_Sum {
 
-	static boolean find3Numbers(int A[], int arr_size, int sum) {
+	static boolean find3Numbers(int[] A, int arr_size, int sum) {
 		
 		for (int i = 0; i < arr_size - 2; i++) {
 			HashSet<Integer> s = new HashSet<Integer>();
@@ -23,7 +23,7 @@ public class Triplet_Given_Sum {
 	}
 
 	public static void main(String[] args) {
-		int A[] = { 1, 4, 45, 6, 10, 8 };
+		int[] A = { 1, 4, 45, 6, 10, 8 };
 		int sum = 20;
 		int arr_size = A.length;
 

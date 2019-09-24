@@ -11,7 +11,7 @@ public class DateConvert {
 	public static void main(String[] args) throws ParseException {
 		String start_dt = "2011-01-01";
 		DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd"); 
-		Date date = (Date)formatter.parse(start_dt);
+		Date date = formatter.parse(start_dt);
 		System.out.println("date "+date);
 		
 		SimpleDateFormat newFormat = new SimpleDateFormat("MM-dd-yyyy");

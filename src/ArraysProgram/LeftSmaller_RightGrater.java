@@ -6,7 +6,7 @@ public class LeftSmaller_RightGrater {
 
 		 int[] arr = {5, 1, 4, 3, 6, 8, 10, 7, 9}; 
          int n = arr.length; 
-         System.out.println("Index of the element is " +  
+         System.out.println("Element is " +
          findElement(arr, n));
 	}
 	static int findElement(int[] arr, int n) 
@@ -24,7 +24,7 @@ public class LeftSmaller_RightGrater {
            { 
                 // Check if we found a required element 
                 if (leftMax[i] < arr[i] && rightMin > arr[i]) 
-                    return i; 
+                    return arr[i];
 
                 // Update right minimum 
                 rightMin = Math.min(rightMin, arr[i]);  

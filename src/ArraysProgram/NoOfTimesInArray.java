@@ -8,7 +8,7 @@ import java.util.Set;
 public class NoOfTimesInArray {
 
 	public static void main(String[] args) {
-		int arr[] = { 7, 1, 8, 8, 9, 1, 1, 4, 2, 2 };
+		int[] arr = { 7, 1, 8, 8, 9, 1, 1, 4, 2, 2 };
 		int n = arr.length;
 		occurredOnce(arr, n);
 	}

@@ -52,7 +52,7 @@ class BinaryTree
 	} 
 
 	/* Driver function to test above functions */
-	public static void main(String args[]) 
+	public static void main(String[] args)
 	{ 
 		BinaryTree tree = new BinaryTree(); 
 

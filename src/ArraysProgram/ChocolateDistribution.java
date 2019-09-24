@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ChocolateDistribution {
 
-	static int findMinDiff(int arr[], int n, int m) {
+	static int findMinDiff(int[] arr, int n, int m) {
 		// if there are no chocolates or number of students is 0
 		if (m == 0 || n == 0)
 			return 0;
@@ -29,7 +29,7 @@ public class ChocolateDistribution {
 	}
 
 	public static void main(String[] args) {
-		int arr[] = { 12, 4, 7, 9, 2, 23, 25, 41, 30, 40, 28, 42, 30, 44, 50 };
+		int[] arr = { 12, 4, 7, 9, 2, 23, 25, 41, 30, 40, 28, 42, 30, 44, 50 };
 
 		int m = 7; // Number of students
 

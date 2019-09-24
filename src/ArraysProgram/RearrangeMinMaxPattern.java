@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class RearrangeMinMaxPattern {
 
 	public static void main(String[] args) {
-		int arr[] = {7,1,2,6,4,5};
+		int[] arr = {7,1,2,6,4,5};
 		System.out.println("Given Array");
 		printArray(arr);
 //		reArrangeMethod1(arr);
@@ -16,7 +16,7 @@ public class RearrangeMinMaxPattern {
 		//	Time Complexity: O(n)
 		//	Auxiliary Space: O(n)
 		int n=arr.length;
-		int temp[] = new int[n];
+		int[] temp = new int[n];
 		int first = 0, last = arr[n-1];
 		boolean flag = true; 
 		for (int i = 0; i < n; i++) {

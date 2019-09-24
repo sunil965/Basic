@@ -15,7 +15,7 @@ public class InsertAtKth {
 
 	public static void main(String[] args) {
 		
-		int givenArray[] = {1,2,3,4,5};
+		int[] givenArray = {1,2,3,4,5};
 		int N = 5;
 		int J = N;
 		int K = 2;		// Position at which new element is to be inserted.

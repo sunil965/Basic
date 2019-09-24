@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class XsquareYPair {
 	
-	static int count(int x, int Y[], int n, int NoOfY[]) 
+	static int count(int x, int[] Y, int n, int[] NoOfY)
 	{ 
 		// If x is 0, then there cannot be any value in Y such that 
 		// x^Y[i] > Y[i]^x 
@@ -44,10 +44,10 @@ public class XsquareYPair {
 	
 	// Function to returns count of pairs (x, y) such that 
 	// x belongs to X[], y belongs to Y[] and x^y > y^x 
-	static int countPairs(int X[], int Y[], int m, int n) 
+	static int countPairs(int[] X, int[] Y, int m, int n)
 	{ 
 		// To store counts of 0, 1, 2, 3 and 4 in array Y 
-		int NoOfY[] = new int[5]; 
+		int[] NoOfY = new int[5];
 		for (int i = 0; i < n; i++) 
 			if (Y[i] < 5) 
 				NoOfY[Y[i]]++; 
@@ -65,10 +65,10 @@ public class XsquareYPair {
 	} 
 	
 	// Driver method 
-	public static void main(String args[]) 
+	public static void main(String[] args)
 	{ 
-		int X[] = {2, 1, 6}; 
-		int Y[] = {1, 5}; 
+		int[] X = {2, 1, 6};
+		int[] Y = {1, 5};
 		System.out.println("Total pairs = " + countPairs(X, Y, X.length, Y.length)); 
 	} 
 

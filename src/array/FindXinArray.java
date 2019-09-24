@@ -7,7 +7,7 @@ public class FindXinArray {
 	/* Searches an element key in a 
 	pivoted sorted array arrp[] 
 	of size n */
-	static int pivotedBinarySearch(int arr[], int n, int key) 
+	static int pivotedBinarySearch(int[] arr, int n, int key)
 	{ 
 	int pivot = findPivot(arr, 0, n-1); 
 		
@@ -27,7 +27,7 @@ public class FindXinArray {
 	/* Function to get pivot. For array 
 	3, 4, 5, 6, 1, 2 it returns 
 	3 (index of 6) */
-	static int findPivot(int arr[], int low, int high) 
+	static int findPivot(int[] arr, int low, int high)
 	{ 
 	// base cases 
 	if (high < low) 
@@ -47,7 +47,7 @@ public class FindXinArray {
 	} 
 	
 	/* Standard Binary Search function */
-	static int binarySearch(int arr[], int low, int high, int key) 
+	static int binarySearch(int[] arr, int low, int high, int key)
 	{ 
 	if (high < low) 
 		return -1; 
@@ -62,10 +62,10 @@ public class FindXinArray {
 	} 
 	
 	// main function 
-	public static void main(String args[]) 
+	public static void main(String[] args)
 	{ 
 	// Let us search 3 in below array 
-	int arr1[] = {5, 6, 7, 8, 9, 10, 1, 2, 3}; 
+	int[] arr1 = {5, 6, 7, 8, 9, 10, 1, 2, 3};
 	int n = arr1.length; 
 	int key = 3; 
 	System.out.println("Element at Index "+key+" is : "+ pivotedBinarySearch(arr1, n, key)); 

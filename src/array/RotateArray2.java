@@ -2,7 +2,7 @@ package array;
 
 public class RotateArray2 { 
     /*Function to left rotate arr[] of siz n by d*/
-    void leftRotate(int arr[], int d, int n) 
+    void leftRotate(int[] arr, int d, int n)
     { 
         int i, j, k, temp; 
         for (i = 0; i < gcd(d, n); i++) { 
@@ -26,7 +26,7 @@ public class RotateArray2 {
     /*UTILITY FUNCTIONS*/
   
     /* function to print an array */
-    void printArray(int arr[], int size) 
+    void printArray(int[] arr, int size)
     { 
         int i; 
         for (i = 0; i < size; i++) 
@@ -56,7 +56,7 @@ public class RotateArray2 {
     public static void main(String[] args) 
     { 
         RotateArray2 rotate = new RotateArray2(); 
-        int arr[] = { 1, 2, 3, 4, 5, 6, 7, 8}; 
+        int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8};
         rotate.printArray(arr, 8); 
         System.out.println();
         rotate.leftRotate(arr, 3, 8); 

@@ -4,7 +4,7 @@ public class MissingNumber {
 
 	public static void main(String[] args) {
 		
-		int arr[] = { 1, 2, 4, 5 };
+		int[] arr = { 1, 2, 4, 5 };
 		int n = arr.length;
 		findMissingNo(arr, n);
 		getMissingNo(arr, n);
@@ -23,7 +23,7 @@ public class MissingNumber {
 			}
 	}
 	
-	static void getMissingNo(int a[], int n) 
+	static void getMissingNo(int[] a, int n)
     { 
 		int last=a.length+1;
         int i, total; 

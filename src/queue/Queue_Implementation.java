@@ -2,7 +2,7 @@ package queue;
 
 public class Queue_Implementation {
 	
-	private int array[];
+	private int[] array;
 	private int capacity;
 	private int rear;
 	private int front;

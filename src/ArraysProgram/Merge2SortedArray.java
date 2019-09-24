@@ -4,9 +4,9 @@ public class Merge2SortedArray {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int ar1[] = {1, 5, 9, 10, 15, 20};
-		int ar2[] = {2, 3, 8, 13};
-		int ar3[] = new int[ar1.length + ar2.length];
+		int[] ar1 = {1, 5, 9, 10, 15, 20};
+		int[] ar2 = {2, 3, 8, 13};
+		int[] ar3 = new int[ar1.length + ar2.length];
 		mergeArray(ar1,ar2,ar3);
 	}
 

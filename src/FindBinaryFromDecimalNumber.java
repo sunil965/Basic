@@ -4,7 +4,7 @@ public class FindBinaryFromDecimalNumber {
 	
 	public static void main(String[] args) {
 		int input, rem, quot, i=1,j;
-		int bin_num[] = new int[100];
+		int[] bin_num = new int[100];
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Insert a decimal no: ");
 		input=sc.nextInt();

@@ -2,7 +2,7 @@ package ArraysProgram;
 
 public class WaterTapping {
 
-static int arr[] = new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}; 
+static int[] arr = new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
 	
 	/*
 	 * static int findWater(int n) { int left[] = new int[n];
@@ -26,7 +26,7 @@ static int arr[] = new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};
 	
 	// Approach 2 - O(n)- Time Complexity, O(n) Space Complexity.
 	
-	  static int findWater(int arr[], int n) 
+	  static int findWater(int[] arr, int n)
 	{
 		int result = 0;
 		int leftMax = 0, rightMax = 0;

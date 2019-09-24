@@ -89,10 +89,8 @@ public class InfixToPostfix {
 	  * @return true if operator
 	  */
 	 private boolean isOperator(char c){
-	  if(c == '+' || c == '-' || c == '*' || c =='/' || c == '^')
-	   return true;
-	  return false;
-	 }
+         return c == '+' || c == '-' || c == '*' || c == '/' || c == '^';
+     }
 	  
 	 /**
 	  * Checks if c2 has same or higher precedence than c1
@@ -105,10 +103,7 @@ public class InfixToPostfix {
 	   return true;
 	  else if((c2 == '*' || c2 == '/') && (c1 == '+' || c1 == '-' || c1 == '*' || c1 == '/'))
 	   return true;
-	  else if((c2 == '^') && (c1 == '+' || c1 == '-' || c1 == '*' || c1 == '/'))
-	   return true;
-	  else
-	   return false;
+	  else return (c2 == '^') && (c1 == '+' || c1 == '-' || c1 == '*' || c1 == '/');
 	 }
 	  
 	 /**

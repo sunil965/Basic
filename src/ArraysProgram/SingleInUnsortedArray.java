@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SingleInUnsortedArray {
 	
-	public static void occurredOnce(int arr[], int n)
+	public static void occurredOnce(int[] arr, int n)
 	{
 	    // Sort the array
 	    Arrays.sort(arr);
@@ -25,7 +25,7 @@ public class SingleInUnsortedArray {
 	}
 	
 	public static void main(String[] args) {
-		int arr[] = { 7, 7, 8, 8, 9, 1, 1, 4, 2, 2 };
+		int[] arr = { 7, 7, 8, 8, 9, 1, 1, 4, 2, 2 };
 		int n=arr.length;
 		occurredOnce(arr, n);
 	}

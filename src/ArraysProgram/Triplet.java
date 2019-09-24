@@ -24,7 +24,7 @@ public class Triplet {
 		}
 		 
 	}
-	static int find3Numbers(int A[], int arr_size) 
+	static int find3Numbers(int[] A, int arr_size)
     { 
         int count = 0; 
   

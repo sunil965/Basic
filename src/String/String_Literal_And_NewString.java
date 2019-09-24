@@ -6,7 +6,7 @@ public class String_Literal_And_NewString {
 		// TODO Auto-generated method stub
 
 		 String s1="hii";       
-		 String s2=new String("hii") ;       
+		 String s2= "hii";
 		 String s3="hii";    
 		System.out.println(/* s1 ==s2 + "," + */ s3==s2); 
 		

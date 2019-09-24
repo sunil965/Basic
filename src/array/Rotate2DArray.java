@@ -10,10 +10,10 @@ class GFG
 	static final int N=3; 
 	
 	// function to rotate matrix by k times 
-	static void rotateMatrix(int matrix[][], int k) 
+	static void rotateMatrix(int[][] matrix, int k)
 	{ 
 		// temporary array of size M 
-		int temp[]=new int[M]; 
+		int[] temp =new int[M];
 		
 		// within the size of matrix 
 		k = k % M; 
@@ -39,7 +39,7 @@ class GFG
 	} 
 	
 	// function to display the matrix 
-	static void displayMatrix(int matrix[][]) 
+	static void displayMatrix(int[][] matrix)
 	{ 
 		for (int i = 0; i < N; i++) 
 		{ 
@@ -52,7 +52,7 @@ class GFG
 	// Driver code 
 	public static void main (String[] args) 
 	{ 
-		int matrix[][] = {{12, 23, 34}, 
+		int[][] matrix = {{12, 23, 34},
 						{45, 56, 67}, 
 						{78, 89, 91}}; 
 	int k = 2; 

@@ -6,10 +6,8 @@ import java.util.Stack;
 public class PostfixToInfix {
 
 	 private boolean isOperator(char c){
-	  if(c == '+' || c == '-' || c == '*' || c =='/' || c == '^')
-	   return true;
-	  return false;
-	 }
+         return c == '+' || c == '-' || c == '*' || c == '/' || c == '^';
+     }
 	  
 	 /**
 	  * Converts any postfix to infix

@@ -24,7 +24,7 @@ class ChackTree {
 	 * Function to find index of value in arr[start...end] The function assumes that
 	 * value is present in in[]
 	 */
-	static int search(int arr[], int strt, int end, int value) {
+	static int search(int[] arr, int strt, int end, int value) {
 		for (int i = strt; i <= end; i++) {
 			if (arr[i] == value)
 				return i;
@@ -38,7 +38,7 @@ class ChackTree {
 	 * inEnd should be 0 and len -1. The function doesn't do any error checking for
 	 * cases where inorder and preorder do not form a tree
 	 */
-	static Node buildTree(int inOrder[], int preOrder[], int inStrt, int inEnd) {
+	static Node buildTree(int[] inOrder, int[] preOrder, int inStrt, int inEnd) {
 
 		if (inStrt > inEnd)
 			return null;
@@ -65,7 +65,7 @@ class ChackTree {
 	/*
 	 * function to compare Postorder on constructed tree and given Postorder
 	 */
-	static int checkPostorder(Node node, int postOrder[], int index) {
+	static int checkPostorder(Node node, int[] postOrder, int index) {
 		if (node == null)
 			return index;
 
@@ -88,9 +88,9 @@ class ChackTree {
 
 // Driver program to test above functions 
 	public static void main(String[] args) {
-		int inOrder[] = { 4, 2, 5, 1, 3 };
-		int preOrder[] = { 1, 2, 4, 5, 3 };
-		int postOrder[] = { 4, 5, 2, 3, 1 };
+		int[] inOrder = { 4, 2, 5, 1, 3 };
+		int[] preOrder = { 1, 2, 4, 5, 3 };
+		int[] postOrder = { 4, 5, 2, 3, 1 };
 
 		int len = inOrder.length;
 

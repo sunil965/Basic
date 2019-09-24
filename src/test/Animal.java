@@ -13,7 +13,7 @@ public class Animal {
 	}
 
 	public Animal(int i, int j) {
-		this.age = i;
+		age = i;
 		this.code = j;
 	}
 

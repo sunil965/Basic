@@ -4,7 +4,7 @@ public class StockBuySell1 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int arr[]= {100, 120, 150, 40, 200, 250, 130};
+		int[] arr = {100, 120, 150, 40, 200, 250, 130};
 		int n = arr.length;
 		stockFunction(arr, n);
 	}

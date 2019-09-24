@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 public class NoOfTrplets {
 
-	static void countTriplet(int arr[], int n) {
+	static void countTriplet(int[] arr, int n) {
 		// sort the array
 		Arrays.sort(arr);
 		int found = 0;
@@ -34,8 +34,8 @@ public class NoOfTrplets {
 		}
 	}
 
-	public static void main(String args[]) {
-		int arr[] = { 5, 12, 1, 7, 10, 50, 19, 21, 2 };
+	public static void main(String[] args) {
+		int[] arr = { 5, 12, 1, 7, 10, 50, 19, 21, 2 };
 		int n = arr.length;
 		countTriplet(arr, n);
 	}

@@ -20,7 +20,7 @@ public class Queue {
 class QueueClass {
 	int front, rear, size;
 	int capacity;
-	int array[];
+	int[] array;
 
 	public QueueClass(int capacity) {
 		this.capacity = capacity;

@@ -7,7 +7,7 @@ class Interval {
 } 
 
 class StockBuySell { 
-	void stockBuySell(int price[], int n) 
+	void stockBuySell(int[] price, int n)
 	{ 
 		if (n == 1) 
 			return; 
@@ -42,10 +42,10 @@ class StockBuySell {
 
 	} 
 
-	public static void main(String args[]) 
+	public static void main(String[] args)
 	{ 
 		StockBuySell stock = new StockBuySell(); 
-		int price[] = { 100, 180, 260, 310, 40, 535, 695 }; 
+		int[] price = { 100, 180, 260, 310, 40, 535, 695 };
 		int n = price.length; 
 		stock.stockBuySell(price, n); 
 	} 

@@ -2,7 +2,7 @@ package ArraysProgram;
 
 public class IndexOfFirst_1_InArray {
 
-	public static int indexOfFirstOne(int arr[], int low, int high) {
+	public static int indexOfFirstOne(int[] arr, int low, int high) {
 		while (low <= high) {
 			int mid = (low + high) / 2;
 
@@ -17,7 +17,7 @@ public class IndexOfFirst_1_InArray {
 	}
 
 	public static void main(String[] args) {
-		int arr[] = { 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 };
+		int[] arr = { 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 };
 		int n = arr.length;
 		System.out.println("Index id "+indexOfFirstOne(arr, 0, n - 1));
 

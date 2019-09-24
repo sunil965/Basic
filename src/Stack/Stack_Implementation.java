@@ -1,7 +1,7 @@
 package Stack;
 
 public class Stack_Implementation {
-	private int array[];
+	private int[] array;
 	private int capacity;
 	private int top;
 
@@ -29,7 +29,7 @@ public class Stack_Implementation {
 
 	public static void main(String[] args) {
 		int capacity = 100;
-		int array[] = new int[capacity];
+		int[] array = new int[capacity];
 		
 		Stack_Implementation stack = new Stack_Implementation(array, 100);
 		

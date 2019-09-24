@@ -38,9 +38,9 @@ public class Queue_From_Stack {
 			s1.pop();
 			return x;
 		}
-	};
+	}
 
-	// Driver code
+    // Driver code
 	public static void main(String[] args) {
 		Queue q = new Queue();
 		q.enQueue(1);

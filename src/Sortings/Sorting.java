@@ -3,7 +3,7 @@ package Sortings;
 public class Sorting {
 
 	public static void main(String[] args) {
-		int arr[] = { 8, 7, 2, 4, 1, 5, 3, 6 };
+		int[] arr = { 8, 7, 2, 4, 1, 5, 3, 6 };
 		int n = arr.length;
 		System.out.println("----------Selection Sort------");
 		selectionSort(arr, n);
@@ -15,7 +15,7 @@ public class Sorting {
 		mergeSort(arr, n);
 	}
 
-	static void mergeSort(int arr[], int n) {
+	static void mergeSort(int[] arr, int n) {
 		sort(arr, 0, n - 1);
 		print(arr);
 	}
@@ -35,8 +35,8 @@ public class Sorting {
 		int n2 = r - m;
 
 		/* Create temp arrays */
-		int L[] = new int[n1];
-		int R[] = new int[n2];
+		int[] L = new int[n1];
+		int[] R = new int[n2];
 
 		/* Copy data to temp arrays */
 		for (int i = 0; i < n1; ++i)

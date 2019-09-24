@@ -58,7 +58,7 @@ class RemoveDuplicate
 		System.out.println(); 
 	} 
 
-	public static void main(String args[]) 
+	public static void main(String[] args)
 	{ 
 		RemoveDuplicate llist = new RemoveDuplicate(); 
 		llist.push(20); 
