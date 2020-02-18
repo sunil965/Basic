@@ -12,11 +12,11 @@ package tree;
 	} 
 }*/ 
 
-class Traversal 
+class TreeTraversal
 { 
 	Node root; 
 
-	Traversal() 
+	TreeTraversal()
 	{ 
 		root = null; 
 	} 
@@ -68,7 +68,7 @@ class Traversal
 	// Driver method 
 	public static void main(String[] args) 
 	{ 
-		Traversal tree = new Traversal(); 
+		TreeTraversal tree = new TreeTraversal();
 		tree.root = new Node(1); 
 		tree.root.left = new Node(2); 
 		tree.root.right = new Node(3); 

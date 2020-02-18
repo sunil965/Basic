@@ -7,12 +7,6 @@ public class Linkedlist {
 	Node head; // head of list 
 
 	/* Linked list Node*/
-	class Node 
-	{ 
-		int data; 
-		Node next; 
-		Node(int d) {data = d; next = null; } 
-	} 
 
 	/* function to insert a new_node in a list. */
 	void sortedInsert(Node new_node) 

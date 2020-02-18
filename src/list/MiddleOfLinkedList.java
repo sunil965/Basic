@@ -2,18 +2,7 @@ package list;
 
 class MiddleOfLinkedList 
 { 
-	Node head; 
-	
-	class Node 
-	{ 
-		int data; 
-		Node next; 
-		Node(int d) 
-		{ 
-			data = d; 
-			next = null; 
-		} 
-	} 
+	Node head;
 
 	/* Function to print middle of linked list */
 	int printMiddle() 

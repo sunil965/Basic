@@ -33,7 +33,7 @@ public class ChocolateDistribution {
 
 		int m = 7; // Number of students
 
-		int n = arr.length;
+		int n = arr.length; // No of packets.
 		System.out.println("Minimum difference is " + findMinDiff(arr, n, m));
 
 	}

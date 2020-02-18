@@ -1,16 +1,5 @@
 package list;
 
-class Node {
-	int data;
-	Node next;
-
-	public Node(int data) {
-		this.data = data;
-		this.next = null;
-	}
-
-}
-
 public class ReverseByK {
 
 	Node head;
@@ -46,14 +35,14 @@ public class ReverseByK {
 			count++;
 		}
 		
-		// Reverse a Linked List with given size k.
+		// Reverse a Linked List with given size k		   --> 3 2 1 4 5 6 7 8 9 10 .
+
 //		if (node != null) { node.next = cur; }
 
-		// Reverse a Linked List in groups of given size k.
+		// Reverse a Linked List in groups of given size k --> 3 2 1 6 5 4 9 8 7 10 .
 		
 		  if (next != null) { node.next = reverse(next, k); }
 		 
-
 		return pre;
 	}
 
@@ -67,7 +56,7 @@ public class ReverseByK {
 	void printList() {
 		Node temp = head;
 		while (temp != null) {
-			System.out.print(temp.data + "->");
+			System.out.print(temp.data + " ");
 			temp = temp.next;
 		}
 		System.out.println();

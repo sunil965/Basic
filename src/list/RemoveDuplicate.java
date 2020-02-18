@@ -3,15 +3,7 @@ package list;
 //Java program to remove duplicates from a sorted linked list 
 class RemoveDuplicate 
 { 
-	Node head; // head of list 
-
-	/* Linked list Node*/
-	class Node 
-	{ 
-		int data; 
-		Node next; 
-		Node(int d) {data = d; next = null; } 
-	} 
+	Node head;
 
 	void removeDuplicates() 
 	{ 
