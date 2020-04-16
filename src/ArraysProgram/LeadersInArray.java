@@ -6,7 +6,7 @@ package ArraysProgram;
 
 /* Method-1, Time Complexity: O(n*n)*/
 
-/*class LeadersInArray 
+class LeadersInArray
 {
 	void printLeaders(int arr[], int size) 
 	{
@@ -32,11 +32,10 @@ package ArraysProgram;
 		lead.printLeaders(arr, n);
 	}
 }
-*/
 
 /* Method-2, Time Complexity: O(n)*/
 
-class LeadersInArray 
+/*class LeadersInArray
 {
 //	 Java Function to print leaders in an array 
 	void printLeaders(int[] arr, int size)
@@ -63,4 +62,6 @@ class LeadersInArray
 		int n = arr.length;
 		lead.printLeaders(arr, n);
 	}
-}
+
+}	*/
+

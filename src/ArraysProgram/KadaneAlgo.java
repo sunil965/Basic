@@ -3,31 +3,26 @@ package ArraysProgram;
 public class KadaneAlgo {
 
 	public static void main(String[] args) {
-//		int A[] = { 1, 2, 3, -2, 5 };
-//		findSubArrayWithMaxSum(A, A.length);
-		
-		int[] A2 = { -8, -3, -6, -2, -5, -4, 3, 7, -1};
-		kadane(A2);
+		int A[] = { 4,-3,-2,2,3,1,-2,-3,4,2,-6,-3,-1,3,1,2 };
+		findSubArrayWithMaxSum(A, A.length);
+
+//		int[] A2 = { 4,-3,-2,2,3,1,-2,-3,4,2,-6,-3,-1,3,1,2};
+//		kadane(A2);
 	}
 
 	public static void findSubArrayWithMaxSum(int[] a, int size) {
-		int oldMax = a[0],newMax = 0, start, end, temp=0;
+		int oldMax = a[0],newMax = 0, start = 0, end = 0, temp=0;
 		for(int i=0; i<size; i++) {
 			newMax = newMax + a[i];
 			if(newMax > oldMax) {
 				oldMax = newMax;
-				start = temp;
-				end=i;
-				
-				if(i==size-1) {
-					printArray(a,start, end, newMax);
-				}
 			}
 			if(newMax < 0) {
 				newMax = 0;
-				temp=i+1;
 			}
 		}
+//		printArray(a,start, end, newMax);
+		System.out.println("Max sum : "+newMax);
 	}
 
 	private static void printArray(int[] a, int start, int end, int newMax) {
@@ -35,11 +30,11 @@ public class KadaneAlgo {
 			System.out.print(a[i]+" ");
 		}
 		System.out.println("Start Index is : "+start+" , End Index is : "+end+" and Max Sum: "+newMax);
-		
+
 	}
-	
+
 	/* Method 2: If all elements are negative.*/
-	  
+
 	// Function to find contiguous sub-array with the largest sum in given set of integers
       
     /*public static int kadane1(int[] A)
@@ -82,28 +77,27 @@ public class KadaneAlgo {
 		}
     }
    */
-	
+
 	// Method to find sum only.
-	
-	public static int kadane(int[] A)
-    {
-        int oldMax = A[0], newMax = 0, start =0, end =0, oldIndex=0;
-        
-        for (int newIndex=0; newIndex< A.length-1; newIndex++)
-        {
-        	newMax =  newMax + A[newIndex];
-        	if (newMax>oldMax) {
-        		oldMax = newMax;
-        		start=oldIndex;
-        		end=newIndex;
-			}else {
-				newMax =0;
-				oldIndex = newIndex+1;
+
+	public static int kadane(int[] A) {
+		int preMax = A[0], sum = 0, startIndex = 0, endIndex = 0, oldIndex = 0;
+
+		for (int i = 0; i < A.length - 1; i++) {
+			sum = sum + A[i];
+			if (sum > preMax) {
+				preMax = sum;
+				startIndex = oldIndex;
+				endIndex = i;
 			}
-        }
-        printArray(A, start, end, newMax);
-        
-        return oldMax;
-    }
- 
+			if (sum < 0) {
+				sum = 0;
+				oldIndex = i + 1;
+			}
+		}
+		printArray(A, startIndex, endIndex, preMax);
+
+		return preMax;
+	}
+
 }
