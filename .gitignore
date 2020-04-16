@@ -33,6 +33,24 @@ local.properties
 .loadpath
 /src/main/resources/rebel.xml
 
+
+######################
+# Intellij
+######################
+.idea/**
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+
+######################
+# Directories
+######################
+/build/**
+/spring_loaded/**
+/deploy/**
+
 # External tool builders
 .externalToolBuilders/**
 
@@ -44,16 +62,6 @@ local.properties
 
 # PDT-specific
 .buildpath
-
-######################
-# Intellij
-######################
-.idea/**
-*.iml
-*.iws
-*.ipr
-*.ids
-*.orig
 
 ######################
 # Maven
@@ -94,14 +102,6 @@ Desktop.ini
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
-
-######################
-# Directories
-######################
-/build/**
-/bin/**
-/spring_loaded/**
-/deploy/**
 
 ######################
 # Logs
