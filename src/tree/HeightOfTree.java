@@ -13,11 +13,11 @@ public class HeightOfTree {
         tree.left.right = new Node(5);
 		tree.left.right.left = new Node(6);
 		tree.left.right.right = new Node(6);
-
-        out.println("Height of tree is : " +  maxDepth(tree));
+		HeightOfTree height = new HeightOfTree();
+        out.println("Height of tree is : " +  height.maxDepth(tree));
     }
 
-	private static int maxDepth(Node root) {
+	public int maxDepth(Node root) {
 
 		if (root == null)
 			return 0;

@@ -16,11 +16,10 @@ public class DiameterOfTree2 {
         root.left.right.right = new Node(7);
         root.left.right.right.right = new Node(8);
         Height height = new Height();
-        DiameterOfTree2 tree = new DiameterOfTree2();
-        out.println("Diameter of tree is : " + tree.diameter(root, height));
+        out.println("Diameter of tree is : " + diameter(root, height));
     }
 
-    private int diameter(Node root, Height height) {
+    private static int diameter(Node root, Height height) {
         Height leftHeight = new Height();
         Height rightHeight = new Height();
         if (root == null) {

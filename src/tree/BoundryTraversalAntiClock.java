@@ -4,10 +4,22 @@ package tree;
  **/
 public class BoundryTraversalAntiClock {
 
-    Node root;
+    public static void main(String args[])
+    {
+        Node root;
+        root = new Node(20);
+        root.left = new Node(8);
+        root.left.left = new Node(4);
+        root.left.right = new Node(12);
+        root.left.right.left = new Node(10);
+        root.left.right.right = new Node(14);
+        root.right = new Node(22);
+        root.right.right = new Node(25);
+        printBoundary(root);
+    }
 
     // A simple function to print leaf nodes of a binary tree
-    void printLeaves(Node node)
+    static void printLeaves(Node node)
     {
         if (node == null)
             return;
@@ -20,7 +32,7 @@ public class BoundryTraversalAntiClock {
     }
 
     // A function to print all left boundary nodes, except a leaf node. Print the nodes in TOP DOWN manner.
-    void printBoundaryLeft(Node node)
+    static void printBoundaryLeft(Node node)
     {
         if (node == null)
             return;
@@ -40,7 +52,7 @@ public class BoundryTraversalAntiClock {
 
     // A function to print all right boundary nodes, except a leaf node
     // Print the nodes in BOTTOM UP manner
-    void printBoundaryRight(Node node)
+    static void printBoundaryRight(Node node)
     {
         if (node == null)
             return;
@@ -58,7 +70,7 @@ public class BoundryTraversalAntiClock {
     }
 
     // A function to do boundary traversal of a given binary tree
-    void printBoundary(Node node)
+    static void printBoundary(Node node)
     {
         if (node == null)
             return;
@@ -74,20 +86,5 @@ public class BoundryTraversalAntiClock {
 
         // Print the right boundary in bottom-up manner
         printBoundaryRight(node.right);
-    }
-
-    // Driver program to test above functions
-    public static void main(String args[])
-    {
-        BoundryTraversalAntiClock tree = new BoundryTraversalAntiClock();
-        tree.root = new Node(20);
-        tree.root.left = new Node(8);
-        tree.root.left.left = new Node(4);
-        tree.root.left.right = new Node(12);
-        tree.root.left.right.left = new Node(10);
-        tree.root.left.right.right = new Node(14);
-        tree.root.right = new Node(22);
-        tree.root.right.right = new Node(25);
-        tree.printBoundary(tree.root);
     }
 }
