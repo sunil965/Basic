@@ -1,6 +1,6 @@
 package tree;
 
-import static java.lang.System.*;
+import static java.lang.System.out;
 
 // O(n)
 

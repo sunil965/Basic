@@ -3,7 +3,7 @@ package tree;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import static java.lang.System.*;
+import static java.lang.System.out;
 
 public class LevelOrderTraversing2 {
     public static void main(String[] args) {

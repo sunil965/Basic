@@ -1,6 +1,6 @@
 package tree;
 
-import static java.lang.System.*;
+import static java.lang.System.out;
 
 public class RightViewBST {
     public static void main(String[] args) {
