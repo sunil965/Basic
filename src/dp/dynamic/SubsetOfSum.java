@@ -9,7 +9,7 @@ public class SubsetOfSum {
         System.out.println("Total count of subsets in array whose sum equivalent to a given number : " + countSubsetOfSum(weight, weight.length, sum));
     }
 
-    private static boolean dynamicMethod(int[] wts, int n, int sum) {
+    public static boolean dynamicMethod(int[] wts, int n, int sum) {
         boolean[][] table = new boolean[n + 1][sum + 1];
 /*
         // To Fill 1st row(initialization)
@@ -35,7 +35,7 @@ public class SubsetOfSum {
         return table[n][sum];
     }
 
-    private static int countSubsetOfSum(int[] wts, int n, int sum) {
+    public static int countSubsetOfSum(int[] wts, int n, int sum) {
         int[][] table = new int[n + 1][sum + 1];
 /*
         // To Fill 1st row(initialization)
@@ -61,7 +61,7 @@ public class SubsetOfSum {
         return table[n][sum];
     }
 
-    private static void print(boolean[][] table) {
+    public static void print(boolean[][] table) {
         // Print solved matrix with values.
         for (boolean[] booleans : table) {
             for (int column = 0; column < table[0].length; column++) {
