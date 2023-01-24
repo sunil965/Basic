@@ -8,7 +8,7 @@ public class RearrangeMinMaxPattern {
 		int[] arr = {7,1,2,6,4,5};
 		System.out.println("Given Array");
 		printArray(arr);
-//		reArrangeMethod1(arr);
+		reArrangeMethod1(arr);
 		reArrangeMethod2(arr);
 	}
 
@@ -17,14 +17,13 @@ public class RearrangeMinMaxPattern {
 		//	Auxiliary Space: O(n)
 		int n=arr.length;
 		int[] temp = new int[n];
-		int first = 0, last = arr[n-1];
+		int first = 0, last = n-1;
 		boolean flag = true; 
 		for (int i = 0; i < n; i++) {
-			if (flag) 
-				temp[i]=arr[last--];
-			else
+			if (flag)
 				temp[i]=arr[first++];
-			
+			else
+				temp[i]=arr[last--];
 			flag = !flag;
 		}
 		arr = temp.clone();
@@ -36,14 +35,14 @@ public class RearrangeMinMaxPattern {
 		//  Time Complexity: O(n Log n) 
 		//  Auxiliary Space : O(1)
 		Arrays.sort(arr);
-		int first=arr[0], last = arr[arr.length-1];
-		System.out.println("\nAfter Rearranging Method -1");
+		int first=0, last = arr.length-1;
+		System.out.println("\nAfter Rearranging Method-1");
 		while (first<last) {
-			System.out.print(last-- +" ");
-			System.out.print(first++ +" ");
+			System.out.print(arr[first++] +" ");
+			System.out.print(arr[last--] +" ");
 		}
-		if(arr.length % 2 == 0) {
-			System.out.println(first);
+		if(arr.length % 2 != 0) {
+			System.out.println(arr[first]);
 		}
 	}
 
