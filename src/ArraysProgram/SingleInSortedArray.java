@@ -2,28 +2,27 @@ package ArraysProgram;
 
 public class SingleInSortedArray {
 
-	public static void search(int[] arr, int low, int high) {
-		if (low > high)
+	public static void search(int[] arr, int startIndex, int endIndex) {
+		if (startIndex > endIndex)
 			return;
-		if (low == high) {
-			System.out.println("The required element is " + arr[low]);
+		if (startIndex == endIndex) {
+			System.out.println("The single element is " + arr[startIndex]);
 			return;
 		}
-
-		int mid = (low + high) / 2;
+		int mid = (startIndex + endIndex) / 2;
 		// If mid is even
 		if (mid % 2 == 0) {
 			if (arr[mid] == arr[mid + 1])
-				search(arr, mid + 2, high);
+				search(arr, mid + 2, endIndex);
 			else
-				search(arr, low, mid);
+				search(arr, startIndex, mid);
 		}
 		// If mid is odd
 		else if (mid % 2 == 1) {
 			if (arr[mid] == arr[mid - 1])
-				search(arr, mid + 1, high);
+				search(arr, mid + 1, endIndex);
 			else
-				search(arr, low, mid - 1);
+				search(arr, startIndex, mid - 1);
 		}
 	}
 

@@ -14,14 +14,14 @@ public class StockBuySell1 {
 		int min = a[0], max = 0;
 		int diff = Integer.MIN_VALUE;
 		for(int i=1; i<n; i++) {
-			if(a[i]-a[i-1]> diff)
-				diff = a[i]-a[i-1];
-			if(a[i]<a[i-1])
-				min=a[i];
-			if(a[i]>a[i-1])
-				max=a[i];
+//			if (a[i] - a[i - 1] > diff)
+//				diff = a[i] - a[i - 1];
+			if (a[i] < a[i - 1])
+				min = Math.min(min, a[i]);
+			if (a[i] > a[i - 1])
+				max = Math.max(max,a[i]);
 		}
-		System.out.println("Stock should be baught at price "+ min+ " and sold at "+(max));
+		System.out.println("Stock should be bought at price "+ min+ " and sold at "+max + " with profit of : "+(max-min));
 	}
 
 }
