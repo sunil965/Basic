@@ -17,30 +17,22 @@ public class SubArrayGivenSumHashMap {
 
 	private static void subArraySum(int[] arr, int n, int sum) {
 		int cSum=0;
-		int start = 0; 
-        int end = -1;
+		int start;
+        int end;
         HashMap<Integer, Integer> map = new HashMap<>();
 		for(int i=0; i<=n-1;i++) {
 			cSum += arr[i];
 			if(cSum==sum) {
 				start=0;
 				end=i;
-				if (end == -1) { 
-		            System.out.println("No subarray with given sum exists"); 
-		        } else { 
-		            System.out.println("Sum found between indexes " + start + " to " + end); 
-		        }
-//				break;
+				System.out.println("Sum found between indexes " + start + " to " + end);
+				//				break;
 			}
 			if(map.containsKey(cSum-sum)) {
 				start=map.get(cSum-sum)+1;
 				end=i;
-				if (end == -1) { 
-		            System.out.println("No subarray with given sum exists"); 
-		        } else { 
-		            System.out.println("Sum found between indexes " + start + " to " + end); 
-		        }
-//				break;
+				System.out.println("Sum found between indexes " + start + " to " + end);
+				//				break;
 			}
 			map.put(cSum, i);
 		}
