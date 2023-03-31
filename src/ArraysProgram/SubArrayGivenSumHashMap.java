@@ -1,42 +1,40 @@
 package ArraysProgram;
 
 import java.util.HashMap;
-import java.util.Scanner;
 
 public class SubArrayGivenSumHashMap {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int[] arr = {10, 2, -2, -20, 10}; 
-        int n = arr.length; 
-        System.out.println("Enter the Sum");
-        int sum = sc.nextInt(); 
-        subArraySum(arr, n, sum);
-        sc.close();
+//		int[] arr = {4, 1, 1, -2, 1, 5};
+//		int[] arr = {4, 1, 1, 1, 2, 3, 5};
+		int[] arr = {-5, 8, -14, 2, 4, 12};
+		int sum = -5;
+		int n = arr.length;
+		subArraySum(arr, n, sum);
 	}
 
 	private static void subArraySum(int[] arr, int n, int sum) {
-		int cSum=0;
-		int start;
-        int end;
-        HashMap<Integer, Integer> map = new HashMap<>();
-		for(int i=0; i<=n-1;i++) {
+		int cSum = 0;
+		int start = 0;
+		int end;
+		int maxLength = Integer.MIN_VALUE;
+		HashMap<Integer, Integer> map = new HashMap<>();
+		for (int i = 0; i < n; i++) {
 			cSum += arr[i];
-			if(cSum==sum) {
-				start=0;
-				end=i;
+			if (cSum == sum) {
+				end = i;
 				System.out.println("Sum found between indexes " + start + " to " + end);
-				//				break;
+				maxLength = Math.max(end - start + 1, maxLength);
 			}
-			if(map.containsKey(cSum-sum)) {
-				start=map.get(cSum-sum)+1;
-				end=i;
+			if (map.containsKey(cSum - sum)) {
+				start = map.get(cSum - sum) + 1;
+				end = i;
 				System.out.println("Sum found between indexes " + start + " to " + end);
-				//				break;
+				maxLength = Math.max(end - start + 1, maxLength);
 			}
 			map.put(cSum, i);
 		}
-		
+		System.out.println("Max size Sub Array " + maxLength);
 	}
 
 }
